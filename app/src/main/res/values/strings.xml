@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ParkingSolv</string>
+    <string name="action_settings">Settings</string>
+    <string name="mobile">MOBILE NUMBER</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

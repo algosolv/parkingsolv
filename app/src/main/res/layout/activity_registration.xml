@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.algosolv.parkingsolv.RegistrationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp">
+        <TextView android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:text="Registration Page"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_edittext"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="text|textAutoComplete|textPersonName"
+        android:textColor="@color/button_material_dark"
+        android:hint="Name"
+        android:textSize="14dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobile_editText"
+        android:layout_below="@+id/name_edittext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:hint="Mobile"
+        android:layout_alignRight="@+id/name_edittext"
+        android:layout_alignEnd="@+id/name_edittext"
+        android:inputType="phone"
+        android:textColor="@color/button_material_dark"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carnumber_editText"
+        android:layout_below="@+id/mobile_editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/mobile_editText"
+        android:layout_alignEnd="@+id/mobile_editText"
+        android:layout_marginTop="14dp"
+        android:hint="Car Number"
+        android:inputType="textAutoComplete"
+        android:textColor="@color/button_material_dark"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/licence_editText"
+        android:layout_below="@+id/carnumber_editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:layout_alignRight="@+id/carnumber_editText"
+        android:layout_alignEnd="@+id/carnumber_editText"
+        android:textColor="@color/button_material_dark"
+        android:textSize="15dp"
+        android:hint="Licence Number" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/dob"
+        android:textSize="15dp"
+        android:ems="15"
+        android:hint="Date of Birth"
+        android:editable="false"
+        android:layout_below="@+id/licence_editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/licence_editText"
+        android:layout_alignEnd="@+id/licence_editText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>
